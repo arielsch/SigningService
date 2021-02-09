@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.restservicecors.SigningIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.553 s <<< FAILURE! - in com.example.restservicecors.SigningIntegrationTests
+keyFlow  Time elapsed: 0.748 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at com.example.restservicecors.SigningIntegrationTests.keyFlow(SigningIntegrationTests.java:29)
+

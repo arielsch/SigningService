@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.example.restservicecors.GreetingIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.389 s <<< FAILURE! - in com.example.restservicecors.GreetingIntegrationTests
+keyFlow  Time elapsed: 0.45 s  <<< ERROR!
+org.springframework.web.client.RestClientException: 
+Error while extracting response for type [class [Ljava.lang.String;] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `[Ljava.lang.String;` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `[Ljava.lang.String;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.example.restservicecors.GreetingIntegrationTests.getKeys(GreetingIntegrationTests.java:51)
+	at com.example.restservicecors.GreetingIntegrationTests.keyFlow(GreetingIntegrationTests.java:25)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: 
+JSON parse error: Cannot deserialize instance of `[Ljava.lang.String;` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `[Ljava.lang.String;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.example.restservicecors.GreetingIntegrationTests.getKeys(GreetingIntegrationTests.java:51)
+	at com.example.restservicecors.GreetingIntegrationTests.keyFlow(GreetingIntegrationTests.java:25)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+Cannot deserialize instance of `[Ljava.lang.String;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at com.example.restservicecors.GreetingIntegrationTests.getKeys(GreetingIntegrationTests.java:51)
+	at com.example.restservicecors.GreetingIntegrationTests.keyFlow(GreetingIntegrationTests.java:25)
+
